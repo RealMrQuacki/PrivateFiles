@@ -1,0 +1,202 @@
+{
+  "id": "8a7864b0-1612-4db0-bba9-537e03202ea2",
+  "version": "2.0",
+  "name": "asd",
+  "url": "https://auth.riotgames.com/login#client_id=prod-xsso-playvalorant&code_challenge=ccTNiJzHJtV_DptTs6cSTkDRNf8IZ6P8uLcrgyX6WTg&code_challenge_method=S256&prompt=signup&redirect_uri=https%3A%2F%2Fxsso.playvalorant.com%2Fredirect&response_type=code&scope=openid%20account&show_region=true&state=ede363db50af1a22529a5fbfdd&uri=https%3A%2F%2Fplayvalorant.com%2Fde-de%2Fdownload",
+  "tests": [{
+    "id": "232b8669-ce7d-452e-bc80-f5b0366796fa",
+    "name": "asd",
+    "commands": [{
+      "id": "2bdaab60-8760-4b53-894a-e1546207e1e2",
+      "comment": "",
+      "command": "open",
+      "target": "https://auth.riotgames.com/login#client_id=prod-xsso-playvalorant&code_challenge=ccTNiJzHJtV_DptTs6cSTkDRNf8IZ6P8uLcrgyX6WTg&code_challenge_method=S256&prompt=signup&redirect_uri=https%3A%2F%2Fxsso.playvalorant.com%2Fredirect&response_type=code&scope=openid%20account&show_region=true&state=ede363db50af1a22529a5fbfdd&uri=https%3A%2F%2Fplayvalorant.com%2Fde-de%2Fdownload",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af32ff46-af78-46cf-b79e-16bb07f7ed4b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.random(). toString(36).substring(2,12)",
+      "targets": [],
+      "value": "ticket"
+    }, {
+      "id": "7e4f3d97-07da-4648-bae4-7c4b28b1bdcf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "825x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24bb9130-076a-4da7-8f15-46b840b7f813",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.field__form-input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "asd@gmail.com"
+    }, {
+      "id": "b781014c-42ff-4f43-a5b7-d94e678f843f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.field__form-input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8f79bce4-081d-4741-9247-4f4cb82bd8b4",
+      "comment": "",
+      "command": "type",
+      "target": "name=date_of_birth_day",
+      "targets": [
+        ["name=date_of_birth_day", "name"],
+        ["css=.web-date-input--has-value > .web-date-input__form-input", "css:finder"],
+        ["xpath=//input[@name='date_of_birth_day']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "01"
+    }, {
+      "id": "39104841-f5c8-48e7-aa70-d5273fca25f6",
+      "comment": "",
+      "command": "type",
+      "target": "name=date_of_birth_month",
+      "targets": [
+        ["name=date_of_birth_month", "name"],
+        ["css=.web-date-input__input:nth-child(4) > .web-date-input__form-input", "css:finder"],
+        ["xpath=//input[@name='date_of_birth_month']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "01"
+    }, {
+      "id": "714b4b76-4431-4eae-972e-e4a383e9938a",
+      "comment": "",
+      "command": "type",
+      "target": "name=date_of_birth_year",
+      "targets": [
+        ["name=date_of_birth_year", "name"],
+        ["css=.web-date-input__input:nth-child(5) > .web-date-input__form-input", "css:finder"],
+        ["xpath=//input[@name='date_of_birth_year']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "56f50517-248b-40b6-a7e9-366fa12ef615",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=date_of_birth_year",
+      "targets": [
+        ["name=date_of_birth_year", "name"],
+        ["css=.web-date-input__input:nth-child(5) > .web-date-input__form-input", "css:finder"],
+        ["xpath=//input[@name='date_of_birth_year']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ec48c34e-3a0d-4dc3-ac38-b0577f525a70",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.field__form-input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${ticket}"
+    }, {
+      "id": "b457926a-9154-4520-ad1a-0e1ba475a4e8",
+      "comment": "",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4902d974-b3b3-4677-a0bf-45b5ff1eacb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mobile-button",
+      "targets": [
+        ["css=.mobile-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e27377dd-3574-48b7-8e59-5274f537a7ec",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mobile-button",
+      "targets": [
+        ["css=.mobile-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6780e3c7-d8b0-4af9-938f-35308b02f1f9",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.password-field--green .field__form-input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${ticket}"
+    }, {
+      "id": "ef0efe94-1d90-4827-8575-fa6af157ab92",
+      "comment": "",
+      "command": "click",
+      "target": "name=confirm_password",
+      "targets": [
+        ["name=confirm_password", "name"],
+        ["css=.field--focus .field__form-input", "css:finder"],
+        ["xpath=//input[@name='confirm_password']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb883fef-5de4-4ce5-ae49-a7a681c3c685",
+      "comment": "",
+      "command": "type",
+      "target": "name=confirm_password",
+      "targets": [
+        ["name=confirm_password", "name"],
+        ["css=.field--focus .field__form-input", "css:finder"],
+        ["xpath=//input[@name='confirm_password']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "${ticket}"
+    }, {
+      "id": "4f103fc4-12da-438d-8ce2-1d03872f0b5a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mobile-button",
+      "targets": [
+        ["css=.mobile-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b05b01ed-438f-45a2-a0e2-663d35bdda1c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["232b8669-ce7d-452e-bc80-f5b0366796fa"]
+  }],
+  "urls": ["https://auth.riotgames.com/login#client_id=prod-xsso-playvalorant&code_challenge=ccTNiJzHJtV_DptTs6cSTkDRNf8IZ6P8uLcrgyX6WTg&code_challenge_method=S256&prompt=signup&redirect_uri=https%3A%2F%2Fxsso.playvalorant.com%2Fredirect&response_type=code&scope=openid%20account&show_region=true&state=ede363db50af1a22529a5fbfdd&uri=https%3A%2F%2Fplayvalorant.com%2Fde-de%2Fdownload"],
+  "plugins": []
+}
